@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <!-- Head -->
+    <head>
+        <title>Bellify</title>
+        <link rel="stylesheet" href="style.css">
+
+        <script src="https://cdn.plot.ly/plotly-2.18.0.min.js"></script>
+    </head>
+
+    <!-- Body -->
+    <body>
+        <p id="words">Enter your trials per run and the amount of dice you want <br> (Works best with a high Trials Per Run)</p>
+        <section id="variableArea">
+            <label for="dice">Dice:</label>
+            <input type="number" id="dice" class="numInput" min="1" value="1">
+    
+            <label for="tpr">Trials Per Run:</label>
+            <input type="number" id="tpr" class="numInput" min="1" value="1">
+        </section>
+
+        <main id="program">
+            <button id="start" class="buttons" type="submit" onclick="start()">Start</button>
+            <button id="run" class="buttons" type="submit" onclick="run()">Run</button>
+            <button id="end" class="buttons" type="submit" onclick="end()">End</button>
+            <button id="restart" class="buttons" type="submit" onclick="restart()">Restart</button>
+        </main>
+
+        <div id="graph"></div>
+    </body>
+
+    <script src="code.js"></script>
+
+</html>
